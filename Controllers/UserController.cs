@@ -100,4 +100,16 @@ public class UserController : Controller
             userlist.Remove(user);
             return RedirectToAction(nameof(Index));
         }
+
+        // GET: User/Search
+        public IActionResult Search(string searchTerm)
+        {
+            if (string.IsNullOrEmpty(searchTerm))
+            {
+                return View("Index", userlist);
+            }
+
+            var filteredUsers = userlist.Where(u => u.Name.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)).ToList();
+            return View("Index", filteredUsers);
+        }
 }
