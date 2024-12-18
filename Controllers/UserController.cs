@@ -10,7 +10,7 @@ public class UserController : Controller
 
         // GET: User
         public ActionResult Index()
-        {
+        {1
             // Implement the Index method here
         }
 
