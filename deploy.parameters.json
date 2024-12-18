@@ -6,10 +6,10 @@
       "value": "East US"
     },
     "appServicePlanName": {
-      "value": "myAppServicePlan"
+      "value": "GithubActionsAppServicePlan_Sanjay"
     },
     "webAppName": {
-      "value": "myMvcApp"
+      "value": "GithubActionsWebApp_Sanjay"
     }
   }
 }
